@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five arithmetic games"
+repository = "https://github.com/solmael/python-project-49.git"
 authors = ["solmael <solmael13@gmail.com>"]
+classifiers = ["Programming Language :: Python :: 3"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
