@@ -4,15 +4,11 @@
 ### Description:
 The "brain games" project includes collection of five simple arithmetic games.
 
-**Check if a number is prime
-
-Find the missing number in arithmetic progression
-
-Check if a number is even
-
-Find the greatest common divisor of two numbers
-
-Getting the calculation result (multiplication, addition, subtraction)**
+**Check if a number is prime**
+__Find the missing number in arithmetic progression__
+**Check if a number is even**
+__Find the greatest common divisor of two numbers__
+**Getting the calculation result (multiplication, addition, subtraction)**
 
 Each game requires three correct answers. A wrong answer ends the game.
 
