@@ -4,16 +4,16 @@
 ### Description:
 The "brain games" project includes collection of five simple arithmetic games.
 
-- Check if a number is prime
-- Find the missing number in arithmetic progression
-- Check if a number is even
-- Find the greatest common divisor of two numbers
-- Getting the calculation result (multiplication, addition, subtraction)
+- Check if a number is prime (command: ```brain-prime```)
+- Find the missing number in arithmetic progression (command: ```brain-progression```)
+- Check if a number is even (command: ```brain-even```)
+- Find the greatest common divisor of two numbers (command: ```brain-gcd```)
+- Getting the calculation result (multiplication, addition, subtraction) (command: ```brain-calc```)
 
 Each game requires three correct answers. A wrong answer ends the game.
 
 ### Install:
-To install this package use command: ``` pip install --user git@github.com:solmael/python-project-49.git ```
+To install this package use command: ``` git clone https://github.com/solmael/python-project-49.git ```
 
 
 ### The project was created using:
