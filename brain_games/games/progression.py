@@ -1,7 +1,7 @@
 import random
 
-from brain_games.engine import start_game
 from brain_games.const import PROGRESSION_INSTRUCTION
+from brain_games.engine import start_game
 
 
 def get_progression_and_result():

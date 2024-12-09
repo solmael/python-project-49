@@ -1,8 +1,8 @@
-import random
 import math
+import random
 
-from brain_games.engine import start_game
 from brain_games.const import GCD_INSTRUCTION
+from brain_games.engine import start_game
 
 
 def get_nums_and_result():

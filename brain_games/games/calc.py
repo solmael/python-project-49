@@ -1,7 +1,7 @@
 import random
 
-from brain_games.engine import start_game
 from brain_games.const import CALC_INSTRUCTION, MATH_SIGNS
+from brain_games.engine import start_game
 
 
 def get_expression_and_result():
