@@ -14,11 +14,13 @@ Each game requires three correct answers. A wrong answer ends the game.
 
 ### Install:
 To install this package use command: ``` git clone https://github.com/solmael/python-project-49.git ```
+
 Using a **Makefile** you can generate all the necessary packages for your virtual environment.
-```make install``` install poetry packages
-```make build``` build your packages inside your project
-```make publish``` command to publish what is included in the build
-```make package-install``` installing the assembled package from the OS allowing shell commands to be used
+
+- ```make install``` install poetry packages
+- ```make build``` build your packages inside your project
+- ```make publish``` command to publish what is included in the build
+- ```make package-install``` installing the assembled package from the OS allowing shell commands to be used
 
 ### The project was created using:
 	Python 3.10.12
