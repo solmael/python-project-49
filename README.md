@@ -29,4 +29,7 @@ Using a **Makefile** you can generate all the necessary packages for your virtua
 	prompt 0.4.1
 
 ### How it works:
-[![asciicast](https://asciinema.org/a/i7vmSDg301PheaYLXeG8WKmYU.svg)](https://asciinema.org/a/i7vmSDg301PheaYLXeG8WKmYU)
+**brain-games**
+[![asciicast](https://asciinema.org/a/txMGQ02dT7Bn0MjYEUQbIkSvj.svg)](https://asciinema.org/a/txMGQ02dT7Bn0MjYEUQbIkSvj)
+**brain-even**
+[![asciicast](https://asciinema.org/a/tylL7XAYSToGf2GunKidUZHrM.svg)](https://asciinema.org/a/tylL7XAYSToGf2GunKidUZHrM)
