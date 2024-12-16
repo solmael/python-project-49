@@ -1,5 +1,6 @@
 from random import randint, choice
 from operator import add, sub, mul
+
 from brain_games.const import CALC_INSTRUCTION
 from brain_games.engine import start_game
 

@@ -1,5 +1,6 @@
 from math import gcd
 from random import randint
+
 from brain_games.const import GCD_INSTRUCTION
 from brain_games.engine import start_game
 

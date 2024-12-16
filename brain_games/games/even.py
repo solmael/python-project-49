@@ -1,4 +1,5 @@
 from random import randint
+
 from brain_games.const import EVEN_INSTRUCTION
 from brain_games.engine import start_game
 
