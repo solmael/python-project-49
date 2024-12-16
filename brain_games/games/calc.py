@@ -1,15 +1,16 @@
-import random
-
-from brain_games.const import CALC_INSTRUCTION, MATH_SIGNS
+from random import randint, choice
+from operator import add, sub, mul
+from brain_games.const import CALC_INSTRUCTION
 from brain_games.engine import start_game
 
 
 def get_expression_and_result():
-    num1, num2 = random.randint(1, 100), random.randint(1, 100)
-    sign = random.choice(MATH_SIGNS)
-    expression = f'{num1} {sign} {num2}'
-    result = str(eval(expression))
-    return expression, result
+    num1, num2 = randint(1, 10), randint(1, 10)
+    math_signs = {'+': add, '-': sub, '*': mul}
+    random_sign = choice(list(math_signs.keys()))
+    expression = f'{num1} {random_sign} {num2}'
+    result = (math_signs[random_sign](num1, num2))
+    return expression, str(result)
 
 
 def run_game_calc():
