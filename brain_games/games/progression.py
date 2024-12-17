@@ -1,15 +1,18 @@
-from random import randint
-
 from brain_games.const import PROGRESSION_INSTRUCTION
 from brain_games.engine import start_game
+from brain_games.random_utils import (
+    get_random_length_indx,
+    get_random_num,
+    get_random_num_small,
+)
 
 
 def get_progression_and_result():
-    start = randint(1, 100)
-    step = randint(1, 10)
+    start = get_random_num()
+    step = get_random_num_small()
     length = 10
     progression = [start + step * i for i in range(length)]
-    index_missed_num = randint(0, length - 1)
+    index_missed_num = get_random_length_indx()
     missed_num = str(progression[index_missed_num])
     progression[index_missed_num] = '..'
     progression_str = ' '.join(str(num) for num in progression)
