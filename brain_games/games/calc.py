@@ -4,8 +4,8 @@ from brain_games.random_utils import get_math_signs_and_operator, get_random_num
 
 
 def get_expression_and_result():
-    num1, num2 = get_random_num(), get_random_num()  # random integer from 1 to 99
-    math_signs, random_sign = get_math_signs_and_operator()  # math_signs values is +, -, *
+    num1, num2 = get_random_num(), get_random_num()  #random int from 1 to 99
+    math_signs, random_sign = get_math_signs_and_operator()  #math_signs values +, -, *
     expression = f'{num1} {random_sign} {num2}'
     result = (math_signs[random_sign](num1, num2))
     return expression, str(result)

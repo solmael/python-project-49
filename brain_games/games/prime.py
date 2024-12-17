@@ -13,7 +13,7 @@ def is_prime(num):
 
 
 def get_num_and_answer():
-    num = get_random_num()  # random integer from 1 to 99
+    num = get_random_num()  # random int from 1 to 99
     answer = 'yes' if is_prime(num) else 'no'
 
     return num, answer
