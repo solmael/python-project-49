@@ -6,7 +6,7 @@ from brain_games.random_utils import get_random_num
 
 
 def get_nums_and_result():
-    num1, num2 = get_random_num(), get_random_num() # random integer from 1 to 99
+    num1, num2 = get_random_num(), get_random_num()  # random integer from 1 to 99
     result = str(gcd(num1, num2))
     couple_nums = f'{num1} {num2}'
 
