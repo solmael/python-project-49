@@ -8,8 +8,8 @@ from brain_games.random_utils import (
 
 
 def get_progression_and_result():
-    start = get_random_num()
-    step = get_random_num_small()
+    start = get_random_num() # random integer from 1 to 99
+    step = get_random_num_small() # random integer from 1 to 10
     length = 10
     progression = [start + step * i for i in range(length)]
     index_missed_num = get_random_length_indx()
