@@ -1,6 +1,7 @@
+import prompt
+
 from brain_games.cli import welcome_user
 from brain_games.const import NUM_OF_ROUNDS
-import prompt
 
 
 def start_game(get_question_and_answer, instruction):
