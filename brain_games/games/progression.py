@@ -2,6 +2,7 @@ from random import randint
 
 DESCRIPTION = 'What number is missing in the progression?'
 
+
 def get_progression_and_result():
     print(DESCRIPTION)
     start = randint(1, 99)

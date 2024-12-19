@@ -1,7 +1,8 @@
-from random import choice, randint
 from operator import add, mul, sub
+from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'
+
 
 def get_expression_and_result():
     print(DESCRIPTION)
