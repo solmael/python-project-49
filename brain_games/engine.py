@@ -1,12 +1,11 @@
 import prompt
 
 from brain_games.cli import welcome_user
-from brain_games.const import NUM_OF_ROUNDS
 
+NUM_OF_ROUNDS = 3
 
-def start_game(get_question_and_answer, instruction):
+def start_game(get_question_and_answer):
     name = welcome_user()
-    print(f'{instruction}')
     for _ in range(NUM_OF_ROUNDS):
         question, answer = get_question_and_answer()
         print(f'Question: {question}')
@@ -14,8 +13,12 @@ def start_game(get_question_and_answer, instruction):
         if user_answer == answer:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{answer}'.\n"
-                  f"Let's try again, {name}!")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{answer}'.\n"
+                f"Let's try again, {name}!"
+            )
             return
-    print(f'Congratulations, {name}!')
+    else:
+        print(f'Congratulations, {name}!')
+        
