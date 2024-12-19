@@ -4,6 +4,7 @@ from brain_games.cli import welcome_user
 
 NUM_OF_ROUNDS = 3
 
+
 def start_game(get_question_and_answer):
     name = welcome_user()
     for _ in range(NUM_OF_ROUNDS):
@@ -15,10 +16,9 @@ def start_game(get_question_and_answer):
         else:
             print(
                 f"'{user_answer}' is wrong answer ;(. "
-                f"Correct answer was '{answer}'.\n"
-                f"Let's try again, {name}!"
+                f"Correct answer was '{answer}'."
             )
+            print(f"Let's try again, {name}!")
             return
     else:
         print(f'Congratulations, {name}!')
-        
