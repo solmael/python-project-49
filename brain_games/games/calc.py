@@ -1,15 +1,13 @@
-from brain_games.const import CALC_INSTRUCTION
-from brain_games.engine import start_game
-from brain_games.random_utils import get_math_signs_and_operator, get_random_num
+from random import choice, randint
+from operator import add, mul, sub
 
+DESCRIPTION = 'What is the result of the expression?'
 
 def get_expression_and_result():
-    num1, num2 = get_random_num(), get_random_num()  # random int from 1 to 99
-    math_signs, random_sign = get_math_signs_and_operator()  # signs: +, -, *
+    print(DESCRIPTION)
+    num1, num2 = randint(1, 10), randint(1, 10)
+    math_signs = {'+': add, '-': sub, '*': mul}
+    random_sign = choice(list(math_signs.keys()))
     expression = f'{num1} {random_sign} {num2}'
-    result = (math_signs[random_sign](num1, num2))
+    result = math_signs[random_sign](num1, num2)
     return expression, str(result)
-
-
-def run_game_calc():
-    start_game(get_expression_and_result, CALC_INSTRUCTION)

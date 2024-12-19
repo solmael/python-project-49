@@ -1,23 +1,19 @@
-from brain_games.const import PRIME_INSTRUCTION
-from brain_games.engine import start_game
-from brain_games.random_utils import get_random_num
+from random import randint
 
+DESCRIPTION = (
+    'Answer "yes" if given number is prime. Otherwise answer "no".'
+)
 
 def is_prime(num):
     if num < 2:
         return False
-    for i in range(2, num):
+    for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
             return False
     return True
 
-
 def get_num_and_answer():
-    num = get_random_num()  # random int from 1 to 99
+    print(DESCRIPTION)
+    num = randint(1, 99)
     answer = 'yes' if is_prime(num) else 'no'
-
     return num, answer
-
-
-def run_game_prime():
-    start_game(get_num_and_answer, PRIME_INSTRUCTION)
