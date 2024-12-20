@@ -1,5 +1,4 @@
 import prompt
-
 from brain_games.cli import welcome_user
 
 NUM_OF_ROUNDS = 3
@@ -19,6 +18,6 @@ def start_game(get_question_and_answer):
                 f"Correct answer was '{answer}'."
             )
             print(f"Let's try again, {name}!")
-            return
-    else:
+            break
+    else:  # так должно выглядеть?
         print(f'Congratulations, {name}!')
