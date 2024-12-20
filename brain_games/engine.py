@@ -1,6 +1,5 @@
 import prompt
 
-
 NUM_OF_ROUNDS = 3
 
 
