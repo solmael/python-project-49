@@ -1,14 +1,15 @@
 import prompt
 
-from brain_games.cli import welcome_user
 
 NUM_OF_ROUNDS = 3
 
 
-def start_game(get_question_and_answer):
-    name = welcome_user()
+def start_game(game):
+    name = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
+    print(game.DESCRIPTION)
     for _ in range(NUM_OF_ROUNDS):
-        question, answer = get_question_and_answer()
+        question, answer = game.generate_round_data()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == answer:
@@ -20,5 +21,5 @@ def start_game(get_question_and_answer):
             )
             print(f"Let's try again, {name}!")
             break
-    else:  # так должно выглядеть?
+    else:
         print(f'Congratulations, {name}!')
