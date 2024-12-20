@@ -7,7 +7,8 @@ NUM_OF_ROUNDS = 3
 def start_game(game):
     name = prompt.string('Welcome to the Brain Games!\n'
                          'May I have your name? ')
-    print(game.DESCRIPTION)
+    print(f'Hello, {name}!\n'
+          f'{game.DESCRIPTION}')
     for _ in range(NUM_OF_ROUNDS):
         question, answer = game.generate_round_data()
         print(f'Question: {question}')
