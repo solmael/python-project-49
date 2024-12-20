@@ -4,8 +4,7 @@ from random import choice, randint
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def get_expression_and_result():
-    print(DESCRIPTION)
+def generate_round_data():
     num1, num2 = randint(1, 10), randint(1, 10)
     math_signs = {'+': add, '-': sub, '*': mul}
     random_sign = choice(list(math_signs.keys()))

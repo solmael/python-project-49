@@ -14,8 +14,7 @@ def is_prime(num):
     return True
 
 
-def get_num_and_answer():
-    print(DESCRIPTION)
+def generate_round_data():
     num = randint(1, 99)
     answer = 'yes' if is_prime(num) else 'no'
     return num, answer

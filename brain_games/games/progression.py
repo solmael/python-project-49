@@ -3,8 +3,7 @@ from random import randint
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def get_progression_and_result():
-    print(DESCRIPTION)
+def generate_round_data():
     start = randint(1, 99)
     step = randint(1, 10)
     length = 10
