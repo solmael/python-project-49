@@ -27,17 +27,3 @@ Using a **Makefile** you can generate all the necessary packages for your virtua
 	poetry 1.8.4
 	flake8 7.1.1
 	prompt 0.4.1
-
-### How it works:
-**brain-games**
-[![asciicast](https://asciinema.org/a/txMGQ02dT7Bn0MjYEUQbIkSvj.svg)](https://asciinema.org/a/txMGQ02dT7Bn0MjYEUQbIkSvj)
-**brain-even**
-[![asciicast](https://asciinema.org/a/tylL7XAYSToGf2GunKidUZHrM.svg)](https://asciinema.org/a/tylL7XAYSToGf2GunKidUZHrM)
-**brain-calc**
-[![asciicast](https://asciinema.org/a/g3CCUvz72ukukd1hlozZ06VAW.svg)](https://asciinema.org/a/g3CCUvz72ukukd1hlozZ06VAW)
-**brain-gcd**
-[![asciicast](https://asciinema.org/a/X7QFRh9Gdlrwil12xEKVyBpZl.svg)](https://asciinema.org/a/X7QFRh9Gdlrwil12xEKVyBpZl)
-**brain-progression**
-[![asciicast](https://asciinema.org/a/vb3lG5TB5pvIYWX1l4lVaaFKU.svg)](https://asciinema.org/a/vb3lG5TB5pvIYWX1l4lVaaFKU)
-**brain-prime**
-[![asciicast](https://asciinema.org/a/WzJsGzyEsvVFWuX73AkI8hbMS.svg)](https://asciinema.org/a/WzJsGzyEsvVFWuX73AkI8hbMS)
